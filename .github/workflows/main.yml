@@ -21,6 +21,7 @@ jobs: #Workflow run is made up of one or more jobs
         run: |
           npm run test
   deploy_lambda:
+    needs: 'test'
     runs-on: ubuntu-latest #Through which Server OS we need to Work (type of machine to run the job on)
     steps:
       #Using versioned actions
