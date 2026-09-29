@@ -4,4 +4,5 @@ exports.handler = async (event) => {
        body: JSON.stringify('06.10.25'),
    };
    return response;
+
 };
